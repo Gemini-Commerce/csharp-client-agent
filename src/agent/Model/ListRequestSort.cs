@@ -54,6 +54,7 @@ namespace agent.Model
             this.EvaluationOrder = evaluationOrder;
             this.Field = field;
             this.Order = order;
+            this.AdditionalProperties = new Dictionary<string, object>();
         }
 
         /// <summary>
@@ -61,6 +62,12 @@ namespace agent.Model
         /// </summary>
         [DataMember(Name = "evaluationOrder", EmitDefaultValue = false)]
         public long EvaluationOrder { get; set; }
+
+        /// <summary>
+        /// Gets or Sets additional properties
+        /// </summary>
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -73,6 +80,7 @@ namespace agent.Model
             sb.Append("  EvaluationOrder: ").Append(EvaluationOrder).Append("\n");
             sb.Append("  Field: ").Append(Field).Append("\n");
             sb.Append("  Order: ").Append(Order).Append("\n");
+            sb.Append("  AdditionalProperties: ").Append(AdditionalProperties).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -91,7 +99,7 @@ namespace agent.Model
         /// </summary>
         /// <param name="validationContext">Validation context</param>
         /// <returns>Validation Result</returns>
-        IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
+        IEnumerable<ValidationResult> IValidatableObject.Validate(ValidationContext validationContext)
         {
             yield break;
         }

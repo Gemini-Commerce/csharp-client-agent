@@ -139,7 +139,7 @@ namespace agent.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of AgentAgentEntity</returns>
-        System.Threading.Tasks.Task<AgentAgentEntity> AgentCreateAgentAsync(string tenantId, AgentCreateAgentRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<AgentAgentEntity> AgentCreateAgentAsync(string tenantId, AgentCreateAgentRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -153,7 +153,7 @@ namespace agent.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (AgentAgentEntity)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AgentAgentEntity>> AgentCreateAgentWithHttpInfoAsync(string tenantId, AgentCreateAgentRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<AgentAgentEntity>> AgentCreateAgentWithHttpInfoAsync(string tenantId, AgentCreateAgentRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -166,7 +166,7 @@ namespace agent.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of AgentAgentEntity</returns>
-        System.Threading.Tasks.Task<AgentAgentEntity> AgentGetAgentAsync(string tenantId, string id, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<AgentAgentEntity> AgentGetAgentAsync(string tenantId, string id, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -180,7 +180,7 @@ namespace agent.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (AgentAgentEntity)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AgentAgentEntity>> AgentGetAgentWithHttpInfoAsync(string tenantId, string id, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<AgentAgentEntity>> AgentGetAgentWithHttpInfoAsync(string tenantId, string id, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -194,7 +194,7 @@ namespace agent.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of AgentListResponse</returns>
-        System.Threading.Tasks.Task<AgentListResponse> AgentListAgentsAsync(string tenantId, long pageSize, AgentListAgentsRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<AgentListResponse> AgentListAgentsAsync(string tenantId, long pageSize, AgentListAgentsRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -209,7 +209,7 @@ namespace agent.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (AgentListResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AgentListResponse>> AgentListAgentsWithHttpInfoAsync(string tenantId, long pageSize, AgentListAgentsRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<AgentListResponse>> AgentListAgentsWithHttpInfoAsync(string tenantId, long pageSize, AgentListAgentsRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         /// <summary>
         /// 
         /// </summary>
@@ -223,7 +223,7 @@ namespace agent.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of AgentAgentEntity</returns>
-        System.Threading.Tasks.Task<AgentAgentEntity> AgentUpdateAgentAsync(string tenantId, string id, AgentUpdateAgentRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<AgentAgentEntity> AgentUpdateAgentAsync(string tenantId, string id, AgentUpdateAgentRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
 
         /// <summary>
         /// 
@@ -238,7 +238,7 @@ namespace agent.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (AgentAgentEntity)</returns>
-        System.Threading.Tasks.Task<ApiResponse<AgentAgentEntity>> AgentUpdateAgentWithHttpInfoAsync(string tenantId, string id, AgentUpdateAgentRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken));
+        System.Threading.Tasks.Task<ApiResponse<AgentAgentEntity>> AgentUpdateAgentWithHttpInfoAsync(string tenantId, string id, AgentUpdateAgentRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken));
         #endregion Asynchronous Operations
     }
 
@@ -453,7 +453,7 @@ namespace agent.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of AgentAgentEntity</returns>
-        public async System.Threading.Tasks.Task<AgentAgentEntity> AgentCreateAgentAsync(string tenantId, AgentCreateAgentRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<AgentAgentEntity> AgentCreateAgentAsync(string tenantId, AgentCreateAgentRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             agent.Client.ApiResponse<AgentAgentEntity> localVarResponse = await AgentCreateAgentWithHttpInfoAsync(tenantId, body, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -468,7 +468,7 @@ namespace agent.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (AgentAgentEntity)</returns>
-        public async System.Threading.Tasks.Task<agent.Client.ApiResponse<AgentAgentEntity>> AgentCreateAgentWithHttpInfoAsync(string tenantId, AgentCreateAgentRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<agent.Client.ApiResponse<AgentAgentEntity>> AgentCreateAgentWithHttpInfoAsync(string tenantId, AgentCreateAgentRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             // verify the required parameter 'tenantId' is set
             if (tenantId == null)
@@ -626,7 +626,7 @@ namespace agent.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of AgentAgentEntity</returns>
-        public async System.Threading.Tasks.Task<AgentAgentEntity> AgentGetAgentAsync(string tenantId, string id, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<AgentAgentEntity> AgentGetAgentAsync(string tenantId, string id, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             agent.Client.ApiResponse<AgentAgentEntity> localVarResponse = await AgentGetAgentWithHttpInfoAsync(tenantId, id, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -641,7 +641,7 @@ namespace agent.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (AgentAgentEntity)</returns>
-        public async System.Threading.Tasks.Task<agent.Client.ApiResponse<AgentAgentEntity>> AgentGetAgentWithHttpInfoAsync(string tenantId, string id, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<agent.Client.ApiResponse<AgentAgentEntity>> AgentGetAgentWithHttpInfoAsync(string tenantId, string id, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             // verify the required parameter 'tenantId' is set
             if (tenantId == null)
@@ -803,7 +803,7 @@ namespace agent.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of AgentListResponse</returns>
-        public async System.Threading.Tasks.Task<AgentListResponse> AgentListAgentsAsync(string tenantId, long pageSize, AgentListAgentsRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<AgentListResponse> AgentListAgentsAsync(string tenantId, long pageSize, AgentListAgentsRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             agent.Client.ApiResponse<AgentListResponse> localVarResponse = await AgentListAgentsWithHttpInfoAsync(tenantId, pageSize, body, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -819,7 +819,7 @@ namespace agent.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (AgentListResponse)</returns>
-        public async System.Threading.Tasks.Task<agent.Client.ApiResponse<AgentListResponse>> AgentListAgentsWithHttpInfoAsync(string tenantId, long pageSize, AgentListAgentsRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<agent.Client.ApiResponse<AgentListResponse>> AgentListAgentsWithHttpInfoAsync(string tenantId, long pageSize, AgentListAgentsRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             // verify the required parameter 'tenantId' is set
             if (tenantId == null)
@@ -989,7 +989,7 @@ namespace agent.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of AgentAgentEntity</returns>
-        public async System.Threading.Tasks.Task<AgentAgentEntity> AgentUpdateAgentAsync(string tenantId, string id, AgentUpdateAgentRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<AgentAgentEntity> AgentUpdateAgentAsync(string tenantId, string id, AgentUpdateAgentRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             agent.Client.ApiResponse<AgentAgentEntity> localVarResponse = await AgentUpdateAgentWithHttpInfoAsync(tenantId, id, body, operationIndex, cancellationToken).ConfigureAwait(false);
             return localVarResponse.Data;
@@ -1005,7 +1005,7 @@ namespace agent.Api
         /// <param name="operationIndex">Index associated with the operation.</param>
         /// <param name="cancellationToken">Cancellation Token to cancel the request.</param>
         /// <returns>Task of ApiResponse (AgentAgentEntity)</returns>
-        public async System.Threading.Tasks.Task<agent.Client.ApiResponse<AgentAgentEntity>> AgentUpdateAgentWithHttpInfoAsync(string tenantId, string id, AgentUpdateAgentRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken))
+        public async System.Threading.Tasks.Task<agent.Client.ApiResponse<AgentAgentEntity>> AgentUpdateAgentWithHttpInfoAsync(string tenantId, string id, AgentUpdateAgentRequest body, int operationIndex = 0, System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
         {
             // verify the required parameter 'tenantId' is set
             if (tenantId == null)
